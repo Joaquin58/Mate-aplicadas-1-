@@ -1,4 +1,6 @@
 *.log
 *.aux
-*.md
-*.sync*    
+*.sync*
+*~
+*.out
+*.toc
