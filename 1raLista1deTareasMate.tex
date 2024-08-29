@@ -1,6 +1,5 @@
 \documentclass{book}
-
-\usepackage{graphicx} % Required for inserting images
+\usepackage{epsfig,graphicx} % Required for inserting images
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
@@ -9,17 +8,61 @@
 \usepackage[bookmarksopen]{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage{array}
-\usepackage[T1]{fontenc}
 \usepackage{listings} %Soporte para código
+\usepackage[left=2cm,right=2cm,top=1.8cm,bottom=2.3cm]{geometry}
+% ---definición de los paquetes--
 
-\title{Ciencias de la Computación}
-\author{Generación 2025}
+\title{1ra lista de problemas}
+\author{Ramírez Mendoza Joaquín Rodrigo\\
+Villalobos Juárez Gontran Eliut\\
+Treviño Puebla Héctor Jerome}
 \date{\today}
-
+% ---Inicio de la portada
 \begin{document}
 
-\maketitle
+    \begin{titlepage}
+
+    \begin{minipage}{3cm}
+    	\begin{center}
+    		\includegraphics[height = 0.14\textheight]{recursos/Logo_UNAM.png}\par
+    	\end{center}
+    \end{minipage}\hfill
+    \begin{minipage}{10cm}
+    	
+    \end{minipage}\hfill
+    \begin{minipage}{3cm}
+    	\begin{center}
+    		\includegraphics[height = 0.14\textheight]{recursos/Logo_FC.png}\par
+    	\end{center}
+    \end{minipage}
+        \centering
+        \vspace{1cm}
+        
+        {\bfseries\LARGE Universisdad Nacional Autónoma de México \par}
+        
+        \vspace{1cm}
+        {\scshape\Large Facultad de Ciencias \par}
+        \vspace{1cm}
+        {\scshape\Large Matemáticas para las Ciencias Aplicadas 1 \par}
+        \vspace{1cm}
+        {\scshape\Large Licenciatura en Ciencias de la Computación \par}
+        \vspace{1cm}
+        {\scshape\Huge 1ra lista de problemas  \par}
+        \vspace{3cm}
+        {\itshape\Large Primer Parcial \par}
+        \vfill
+        {\Large Autores: \par}
+        {\Large Ramírez Mendoza Joaquín Rodrigo \par}
+        {\Large Villalobos Juárez Gontran Eliut\par}
+        {\Large Treviño Puebla Héctor Jerome \par}
+        \vfill
+        {\Large Agosto 2024 \par}
+    \end{titlepage}
+% ---Fin de la portada de la portada
+    \maketitle
+
+% Introducir aquí sus capítulos
 \input{matemáticas/balon/balon.tex}
 \input{matemáticas/baseball/baseball.tex}
-
+\input{matemáticas/pista/pista.tex}
 \end{document}
