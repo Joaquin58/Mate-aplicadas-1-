@@ -1,0 +1,33 @@
+\chapter*{title}
+\section{Convergencia de la Serie Geométrica}
+
+    **Problema:**
+    Demostrar que la serie geométrica $\sum_{k=1}^{\infty} q^k$ diverge a $+\infty$ cuando $q \geq 1$.
+
+    **Solución:**
+
+    **Suma Parcial:**
+    Recordemos la fórmula para la suma parcial de una serie geométrica:
+
+    **Análisis de casos para q ≥ 1:**
+    1.  **Caso q = 1:**
+        Si q = 1, cada término de la serie es 1. Por lo tanto, la suma parcial S_n es simplemente n. Al hacer que n tienda a infinito, S_n también tiende a infinito.
+
+    2.  **Caso q > 1:**
+        *   El numerador, q(1 - q^n), tiende a menos infinito cuando n tiende a infinito, ya que q^n crece mucho más rápido que 1.
+        *   El denominador, 1 - q, es un número negativo.
+        *   Por lo tanto, la fracción completa tiende a infinito positivo.
+
+    **Conclusión:**
+    En ambos casos (q = 1 y q > 1), al hacer que n tienda a infinito, la suma parcial S_n también tiende a infinito. Esto significa que la serie no tiene una suma finita y, por lo tanto, **diverge a +∞**.
+
+    **Demostración Formal:**
+    Podemos expresar lo anterior de forma más formal utilizando límites:
+
+    **Interpretación Intuitiva:**
+    * **q = 1:** Estamos sumando infinitos unos, lo cual claramente tiende a infinito.
+    * **q > 1:** Cada término de la serie es mayor que el anterior, y al sumar infinitos términos cada vez más grandes, el resultado es infinito.
+
+    **Respuesta a la Pregunta:**
+    **Por lo tanto, hemos demostrado que cuando q ≥ 1, la serie geométrica ∑_(k=1)^∞ q^k diverge a +∞.**
+
