@@ -6,9 +6,15 @@ alrededor del eje horizontal, una curva y = y (x) que satisface que la longitud 
 entre las dos puntas del balón es de 28 cm y la circunferencia de la máxima sección
 circular transversal al eje mide 53 cm (véase la siguiente figura).
 
+\begin{center}
+    \includegraphics[height = 0.2\textheight]{recursos/Captura desde 2024-08-29 18-44-04.png}\par
+\end{center}
+
+
 a) Rebane la mitad derecha del balón en 10 cilindros de grosor $\Delta x = 1.4$ cm, de manera
-que las rebanadas intersecten el eje x en los valores de la siguiente particiónn del intervalo
+que las rebanadas intersecten el eje x en los valores de la siguiente partición del intervalo
 $[0, 14]$ 
+
 1) Muestre que la parábola es, aproximadamente, la gráfica de la función
     $$y(x)=-0.043x^2 + 8.4352$$
 definida para $-14\leq x\leq 14$
@@ -16,15 +22,15 @@ definida para $-14\leq x\leq 14$
 
 \begin{itemize}
     \item Sabemos que la $\text{Circunferencia}=2\pi r \therefore r=\frac{53}{2\pi}$
-    \item la fórmula de las cónicas para la parábola es $y(x)=ax{^2}+bx+c$
-    \item sabemos que el radio de la circunferencia del balón es la longitud del radio cuando $x=0$, queremos saber el valor de y para $x=0$
+    \item La fórmula de las cónicas para la parábola es $y(x)=ax{^2}+bx+c$
+    \item Sabemos que el radio de la circunferencia del balón es la longitud del radio cuando $x=0$, queremos saber el valor de y para $x=0$
 \end{itemize}
 
 \begin{gather*}
 \therefore y(0)=\frac{53}{2\pi}=a(0){^2}+b(0)+c=c\\
 \Rightarrow c=\frac{53}{2\pi}
 \end{gather*}
-wTambién conocemos dos puntos que pasan por la ecuación del balón y son los puntos extremos, para encontrar los valores de $a,b$ sustituimos estos valores y resolvemos el sistema de ecuaciones
+También conocemos dos puntos que pasan por la ecuación del balón y son los puntos extremos, para encontrar los valores de $a,b$ sustituimos estos valores y resolvemos el sistema de ecuaciones
 \begin{gather*}
 y(14)=a(14){^2}+b(14)+c\\
 y(-14)=a(-14){^2}+b(-14)+c\\
@@ -41,7 +47,7 @@ Podemos expresar la función en términos de $r_0$, de esta manera podemos deduc
 \begin{gather*}
 y(x)=-\frac{c}{196}x{^2}+c\\
 y(x)=-\frac{r_{o}}{196}x{^2}+r_{o},\text{donde }r_o=c\\
-\text{Igualamos a cero para determinar las raices}\\
+\text{Igualamos a cero para determinar las raíces}\\
 -\frac{r_{o}}{196}x{^2}+r_{o}=0\\
 -\frac{r_{o}}{196}x{^2}=-r_{o}\\
 -r_{0}x{^2}=-r_{0}(196)\\
@@ -170,7 +176,7 @@ Podemos decir que $\pi$ y $\Delta h$ son siempre constantes en la suma, por lo t
     \sum_{k=0}^{9}\pi* r_{k}{^2}*\Delta h
     =\pi \Delta h\sum_{k=0}^{9} r_{k}{^2}\\
     \text{sustituyendo }r_k \text{ por } y(x_{k})\\
-    V_{tottal}=\pi \Delta h\sum_{k=0}^{9} y(x_{k}){^2}\\
+    V_{total}=\pi \Delta h\sum_{k=0}^{9} y(x_{k}){^2}\\
     =\pi \Delta h\sum_{k=0}^{9} (0.6025 \sqrt{ 196-x_{k}{^2} }){^2}\\
     \end{gather*}
     así conseguimos la suma de los triangulo circunscritos para calcular el Balón de futbol.
