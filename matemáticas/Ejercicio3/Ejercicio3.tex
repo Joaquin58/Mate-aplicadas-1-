@@ -6,28 +6,53 @@
 
     **Solución:**
 
-    **Suma Parcial:**
-    Recordemos la fórmula para la suma parcial de una serie geométrica:
-
-    **Análisis de casos para q ≥ 1:**
-    1.  **Caso q = 1:**
-        Si q = 1, cada término de la serie es 1. Por lo tanto, la suma parcial S_n es simplemente n. Al hacer que n tienda a infinito, S_n también tiende a infinito.
-
-    2.  **Caso q > 1:**
-        *   El numerador, q(1 - q^n), tiende a menos infinito cuando n tiende a infinito, ya que q^n crece mucho más rápido que 1.
-        *   El denominador, 1 - q, es un número negativo.
-        *   Por lo tanto, la fracción completa tiende a infinito positivo.
-
-    **Conclusión:**
-    En ambos casos (q = 1 y q > 1), al hacer que n tienda a infinito, la suma parcial S_n también tiende a infinito. Esto significa que la serie no tiene una suma finita y, por lo tanto, **diverge a +∞**.
-
-    **Demostración Formal:**
-    Podemos expresar lo anterior de forma más formal utilizando límites:
-
-    **Interpretación Intuitiva:**
-    * **q = 1:** Estamos sumando infinitos unos, lo cual claramente tiende a infinito.
-    * **q > 1:** Cada término de la serie es mayor que el anterior, y al sumar infinitos términos cada vez más grandes, el resultado es infinito.
-
-    **Respuesta a la Pregunta:**
-    **Por lo tanto, hemos demostrado que cuando q ≥ 1, la serie geométrica ∑_(k=1)^∞ q^k diverge a +∞.**
-
+    \textbf{Serie geométrica general:}
+    \[
+    \sum_{k=1}^{\infty} q^k
+    \]
+    Esta es una serie geométrica con razón \( q \).
+ 
+    \textbf{Condiciones de convergencia de una serie geométrica:}
+    Para que la serie geométrica \(\sum_{k=1}^{\infty} q^k\) converja, es necesario que \( |q| < 1 \). Si \( |q| \geq 1 \), la serie diverge. Esto se debe a que:
+    \begin{itemize}
+    \item Si \( |q| < 1 \), los términos \( q^k \) tienden a cero conforme \( k \) aumenta, y la suma total se aproxima a un valor finito.
+    \item Si \( |q| \geq 1 \), los términos \( q^k \) no tienden a cero, lo que provoca que la serie no alcance un valor finito y, por lo tanto, diverge.
+    \end{itemize}
+ 
+    \textbf{Caso \( q \geq 1 \):}
+    \begin{itemize}
+    \item Si \( q = 1 \), la serie se convierte en:
+      \[
+      \sum_{k=1}^{\infty} 1^k = \sum_{k=1}^{\infty} 1 = 1 + 1 + 1 + \cdots
+      \]
+      Claramente, esta serie suma infinitamente muchos unos, lo que implica que la serie diverge a \( +\infty \).
+    \item Si \( q > 1 \), los términos de la serie \( q^k \) crecen sin límite conforme \( k \) aumenta. Por lo tanto, la serie se comporta como:
+      \[
+      \sum_{k=1}^{\infty} q^k = q + q^2 + q^3 + \cdots
+      \]
+      Cada término es mayor que el anterior, lo que hace que la suma total también diverge a \( +\infty \).
+    \end{itemize}
+ 
+ \textbf{Conclusión:}
+ - Por lo tanto, si \( q \geq 1 \), la serie geométrica \(\sum_{k=1}^{\infty} q^k\) no converge, y en términos más precisos, diverge a \( +\infty \).
+ 
+ \section*{b) Valores de \( q \) para los cuales la serie \(\sum_{k=1}^{\infty} q^k\) converge}
+ 
+ \textbf{Análisis:}
+ 
+ 1. \textbf{Caso \( q \leq 0 \):}
+    \begin{itemize}
+    \item Para \( q \leq 0 \), el comportamiento de la serie depende del valor absoluto de \( q \):
+      \begin{itemize}
+      \item Si \( -1 < q < 0 \), la serie es geométrica y converge porque \( |q| < 1 \). Aquí, los términos \( q^k \) se alternan en signo y disminuyen en magnitud.
+      \item Si \( q = -1 \), la serie se convierte en:
+        \[
+        \sum_{k=1}^{\infty} (-1)^k
+        \]
+        Esta es una serie alternante cuyos términos no tienden a cero, por lo tanto, no converge (es un caso de divergencia condicional).
+      \item Si \( q \leq -1 \), los términos \( q^k \) oscilan en magnitud (y posiblemente divergen si \( q < -1 \)) o se repiten (en el caso de \( q = -1 \)), lo que impide la convergencia.
+      \end{itemize}
+    \end{itemize}
+ 
+ \textbf{Conclusión:}
+ - \textbf{La serie geométrica \(\sum_{k=1}^{\infty} q^k\) converge si y solo si \( -1 < q < 1 \).}
